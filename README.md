@@ -19,7 +19,7 @@ console.log(array, deleted_element);
 ```
 And when you look up the [documentation for '.splice'](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice) what's all this about 'Array.prototype.splice()'?
 
-The short answer is that 'Array.prototype' is the ancestor of all arrays. All objects have a properyt called '\_\_proto\_\_' that sets that object's ancestor. Because the '\_\_proto\_\_' of all arrays is 'Array.prototype', any methods or properties attached to 'Array.prototype' can be called by any array.  You can _overwrite_ the properties/methods of an object's ancestor by attaching a property/method of the same name directly to the child object.  
+The short answer is that 'Array.prototype' is the ancestor of all arrays. All objects have a property called '\_\_proto\_\_' that sets that object's ancestor. Because the '\_\_proto\_\_' of all arrays is 'Array.prototype', any methods or properties attached to 'Array.prototype' can be called by any array.  You can _overwrite_ the properties/methods of an object's ancestor by attaching a property/method of the same name directly to the child object.  
 
 Pictures are helpful:  
 

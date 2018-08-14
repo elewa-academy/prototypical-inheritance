@@ -4,16 +4,18 @@ Inheritance in programming languages is very similar to inheritance in the peopl
 
 Even if you didn't know it you've been taking advantage of inheritance since day 1.  Arrays are a great example:
 ```javascript
-var array = ["a", "b"];
-var deleted_element = array.splice(0, 1);
+let array = ["a", "b"];
+let deleted_element = array.splice(0, 1);
 console.log(array, deleted_element);
 ```
 Where did '.splice' come from?  You certainly didn't write it.  What happens if you do this:
 ```javascript
-console.log(array.splice === Array.prototype.splice);
+let array = ["a", "b"];
+// array.splice === Array.prototype.splice;  -->  true
 array.splice = function(arg) { console.log(arg) };
-array.splice(0, 1);
-console.log(array.splice === Array.prototype.splice);
+let deleted_element = array.splice(0, 1);
+console.log(array, deleted_element);
+// array.splice === Array.prototype.splice;  -->  false
 ```
 And when you look up the [documentation for '.splice'](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice) what's all this about 'Array.prototype.splice()'?
 

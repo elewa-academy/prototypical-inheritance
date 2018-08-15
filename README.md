@@ -173,6 +173,8 @@ That sums up the basics of Prototypical Inheritance.  You have the lookup chain,
 ___
 ### Externals
   
+[javascript.info](https://javascript.info/native-prototypes#primitives)  
+  
 [js web blog](https://javascriptweblog.wordpress.com/2010/09/27/the-secret-life-of-javascript-primitives/)
 
 [cli exercises](https://github.com/sporto/planetproto)    
